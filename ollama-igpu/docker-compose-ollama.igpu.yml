@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile.igpu
       args:
         IPEXLLM_RELEASE_REPO: intel/ipex-llm
-        IPEXLLM_RELEASE_VERSON: v2.2.0-nightly
-        IPEXLLM_PORTABLE_ZIP_FILENAME: ollama-ipex-llm-2.2.0b20250313-ubuntu.tgz
+        IPEXLLM_RELEASE_VERSON: v2.3.0-nightly
+        IPEXLLM_PORTABLE_ZIP_FILENAME: ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
     container_name: ollama-igpu-container
     devices:
       - /dev/dri:/dev/dri

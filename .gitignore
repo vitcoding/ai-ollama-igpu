@@ -4,3 +4,5 @@ __pycache__/
 *.env
 
 *temp*
+
+ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
