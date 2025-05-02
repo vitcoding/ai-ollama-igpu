@@ -5,8 +5,8 @@ OLLAMA-IGPU-SERVICE-NAME = ollama-igpu-container
 
 create:
 	make up-$(OLLAMA-IGPU-NAME)
-	docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull evilfreelancer/enbeddrus
-	docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull gemma2:9b
+# docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull evilfreelancer/enbeddrus
+# docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull gemma2:9b
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull llama3.2:3b
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull llama3.1:8b
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull llama3.2-vision:11b
@@ -14,7 +14,9 @@ create:
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull deepseek-r1:14b
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull qwen2.5-coder:7b
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull qwen2.5-coder:14b
+# docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull gemma3:1b
 # docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull gemma3:4b
+# docker exec -it $(OLLAMA-IGPU-SERVICE-NAME) ollama pull gemma3:12b
 
 destroy:
 	make destroy-$(OLLAMA-IGPU-NAME)
