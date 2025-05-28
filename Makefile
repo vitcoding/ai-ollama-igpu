@@ -53,3 +53,5 @@ start-$(OLLAMA-IGPU-NAME):
 # docker exec -it ollama-igpu-container ollama pull gemma3:4b
 # docker exec -it ollama-igpu-container ollama run gemma3:4b
 # docker exec -it ollama-igpu-container ollama rm gemma3:4b
+
+# docker compose -f ollama-igpu/docker-compose-ollama.igpu.yml logs --tail=100 ollama-igpu
